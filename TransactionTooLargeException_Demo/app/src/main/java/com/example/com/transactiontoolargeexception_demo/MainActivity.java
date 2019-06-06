@@ -28,10 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                Bundle bundle = new Bundle();
 //                bundle.putIntArray("data", data);
 //                intent.putExtras(bundle);
+
                 // DataHolder -- memory leak may happen
 //                DataHolder.getInstance().setData(data);
 
+                // DataHolder + WeakReference
                 DataHolderWeakReference.getInstance().save("bigdata", data);
+
+                // use sqlite、share preference、file...
                 startActivity(intent);
                 break;
             default:
