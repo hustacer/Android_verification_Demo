@@ -12,7 +12,11 @@
         <service
             android:name=".CalculateService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.com.aidl_demo.CalculateService" />
+            </intent-filter>
+        </service>
 
         <activity android:name=".MainActivity">
             <intent-filter>
