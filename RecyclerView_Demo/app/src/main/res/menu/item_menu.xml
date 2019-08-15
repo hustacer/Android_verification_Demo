@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/action_listview"
+        android:title="ListView"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/action_gridView"
+        android:title="GridView"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/action_hor_gridView"
+        android:title="水平GridView"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/action_staggered"
+        android:title="瀑布流"
+        app:showAsAction="never"></item>
+</menu>
